@@ -7,7 +7,7 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: wsw
+author: John Doe
 language: en
 timezone: ''
 
@@ -93,15 +93,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-themes: next
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
-#表示站内搜索
-search:
-    path: search.xml
-    field: post
-    format: html
-    limit: 10000
