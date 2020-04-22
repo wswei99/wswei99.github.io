@@ -18,10 +18,10 @@ before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH=$HOME/.yarn/bin:$PATH
 - npm install -g hexo-cli
-- git clone https://github.com/iissnan/hexo-theme-next themes/next
 install:
 - yarn
 script:
+- git clone https://github.com/iissnan/hexo-theme-next themes/next
 - hexo clean
 - hexo generate
 after_success:
