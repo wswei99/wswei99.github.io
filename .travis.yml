@@ -19,7 +19,7 @@ before_install:
 - export PATH=$HOME/.yarn/bin:$PATH
 - npm install -g hexo-cli
 install:
-- yarn
+- npm install
 script:
 - hexo clean
 - hexo generate
