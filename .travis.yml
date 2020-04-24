@@ -4,10 +4,10 @@ branches:
   only:
   - source
 cache:
-  # apt: true
-  # yarn: true
+  apt: true
+  yarn: true
   directories:
-  # - node_modules
+  - node_modules
 before_install:
 - openssl aes-256-cbc -K $encrypted_9b2d7e19d83c_key -iv $encrypted_9b2d7e19d83c_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
@@ -17,12 +17,12 @@ before_install:
 - git config --global user.email "wswei99@126.com"
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH=$HOME/.yarn/bin:$PATH
-# - npm install -g hexo-cli
+- npm install -g hexo-cli
 install:
-# - yarn
+- yarn
 script:
-# - hexo clean
-# - hexo generate
+- hexo clean
+- hexo generate
 after_success:
 - rsync -rv --delete -e 'ssh -o stricthostkeychecking=no' public/ root@118.190.244.87:/usr/share/nginx/html
 - cd ./public
