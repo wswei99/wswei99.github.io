@@ -15,11 +15,11 @@ before_install:
 - echo -e "Host 主机IP地址\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - git config --global user.name "wsw"
 - git config --global user.email "wswei99@126.com"
-- curl -o- -L https://yarnpkg.com/install.sh | bash
-- export PATH=$HOME/.yarn/bin:$PATH
-- npm install -g hexo-cli
+# - curl -o- -L https://yarnpkg.com/install.sh | bash
+# - export PATH=$HOME/.yarn/bin:$PATH
+# - npm install -g hexo-cli
 install:
-- yarn
+# - yarn
 script:
 # - hexo clean
 # - hexo generate
