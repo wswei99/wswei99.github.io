@@ -5,7 +5,7 @@ branches:
   - source
 cache:
   apt: true
-  yarn: true
+  # yarn: true
   directories:
   - node_modules
 before_install:
