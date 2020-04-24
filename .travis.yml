@@ -22,8 +22,8 @@ before_install:
 install:
 - yarn
 script:
-# - hexo clean
-# - hexo generate
+- hexo clean
+- hexo generate
 after_success:
 - rsync -rv --delete -e 'ssh -o stricthostkeychecking=no' public/ root@118.190.244.87:/usr/share/nginx/html
 - cd ./public
